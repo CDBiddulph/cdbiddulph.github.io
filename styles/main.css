@@ -1,0 +1,86 @@
+html {
+  background: #f0f0f0;
+}
+
+body {
+  width: 100%;
+  font-family: 'Raleway', calibri;
+  background: #fff;
+  overflow-x:hidden;
+  margin: 0;
+  height:100%;
+  background-color:rgba(0, 0, 0,0);
+}
+
+/*************
+Top
+**************/
+
+#menu {
+  margin: 1% 2%;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Raleway';
+}
+
+#menu h1 {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline;
+}
+
+#menu h1 b {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#top {
+  text-align: center;
+}
+
+#top img {
+  border-radius: 50%;
+  width: clamp(10em, 20%, 20em);
+}
+
+
+#bio {
+  text-align: center;
+  margin: 3% 13%;
+}
+
+#bio h2 {
+  font-weight: 900;
+}
+
+#bio p {
+  line-height: 1.7;
+  margin-top: 3%;
+}
+
+#bio p a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: all ease-in-out 0.5s;
+  font-weight: bold;
+}
+
+#bio p a:hover {
+  border-color: #333;
+}
+
+#links {
+  text-align: center;
+}
+
+#links a {
+  margin: auto 1%;
+  color: #000;
+}
+
+#links a img {
+  width:42px;
+  height:42px;
+}
