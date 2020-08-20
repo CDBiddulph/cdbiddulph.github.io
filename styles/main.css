@@ -1,86 +1,110 @@
 html {
-  background: #f0f0f0;
+  --background: #edfffe;
+  --navbar: #6dc4c1;
+  --navbar-hover: #4d8b89;
+  --navbar-text: #1b3130;
+  --dark: #1a1a1a;
+
+  background: var(--background);
 }
 
 body {
-  width: 100%;
   font-family: 'Raleway', calibri;
-  background: #fff;
-  overflow-x:hidden;
+  height: 100%;
   margin: 0;
-  height:100%;
-  background-color:rgba(0, 0, 0,0);
 }
 
 /*************
-Top
+Navbar
 **************/
 
-#menu {
-  margin: 1% 2%;
-  display: flex;
-  justify-content: space-between;
+nav {
   font-family: 'Raleway';
+  background-color: var(--navbar);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  display: flex;
+  justify-content: center;
+  width: 100%
 }
 
-#menu h1 {
-  color: #333333;
-  font-size: 24px;
-  font-weight: 400;
-  display: inline;
-}
-
-#menu h1 b {
-  font-size: 30px;
-  font-weight: 400;
-}
-
-#top {
-  text-align: center;
-}
-
-#top img {
-  border-radius: 50%;
-  width: clamp(10em, 20%, 20em);
-}
-
-
-#bio {
-  text-align: center;
-  margin: 3% 13%;
-}
-
-#bio h2 {
-  font-weight: 900;
-}
-
-#bio p {
-  line-height: 1.7;
-  margin-top: 3%;
-}
-
-#bio p a {
+nav a {
   text-decoration: none;
-  color: #000;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--navbar-text);
+  list-style-type: none;
+  text-align: center;
+  transition: background-color ease-in-out 0.6s;
+
+  /* background-color: var(--navbar-button); */
+  padding: 14px 40px;
+}
+
+nav a:hover {
+  background-color: var(--navbar-hover);
+}
+
+/*************
+Main
+**************/
+
+.main {
+  text-align: center;
+}
+
+.myPic {
+  margin: 2em 0 1em 0;
+}
+
+.myPic img {
+  border-radius: 50%;
+  width: 15em;
+}
+
+.bio {
+  margin: auto;
+  width: max(50%, 25em);
+}
+
+.bio h2 {
+  font-weight: 900;
+  margin: 0.5em 0;
+}
+
+.bio p {
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
+
+.bio p a {
+  text-decoration: none;
+  color: var(--dark);
   border-bottom: 2px solid transparent;
   transition: all ease-in-out 0.5s;
   font-weight: bold;
 }
 
-#bio p a:hover {
-  border-color: #333;
+.bio p a:hover {
+  border-color: var(--dark);
 }
 
-#links {
-  text-align: center;
+.links {
+  margin: 2em;
 }
 
-#links a {
+.links a {
   margin: auto 1%;
-  color: #000;
+  color: var(--dark);
 }
 
-#links a img {
-  width:42px;
-  height:42px;
+.links a img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.copyright {
+  color: var(--dark);
+  opacity: 0.7;
+  font-size: 0.85em;
+  margin: 0.5em;
 }
